@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Courses - Sakura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-image: url(./images/sakurabg.jpg);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #fff; */
+        padding: 30px 5%;
+        /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+      }
+
+      .logo {
+        width: 130px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #df4881;
+      }
+
+      .course-header {
+        text-align: center;
+        margin: 40px 20px 20px;
+      }
+
+      .course-header h1 {
+        font-size: 36px;
+        color: #333;
+      }
+
+      .course-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .course-card {
+        background: white;
+        padding: 25px;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+        text-align: center;
+        position: relative;
+      }
+
+      .course-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .course-card i {
+        font-size: 40px;
+        color: #df4881;
+        margin-bottom: 15px;
+      }
+
+      .course-card h2 {
+        font-size: 22px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .course-card p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .course-card a {
+        display: inline-block;
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #df4881, #c430d7);
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .course-card a:hover {
+        background: linear-gradient(45deg, #c430d7, #df4881);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="images/khantlogo.png" class="logo" />
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <div class="course-header">
+      <h1>Japanese Learning Tracks</h1>
+      <p>Choose from beginner to advanced topics</p>
+    </div>
+
+    <section class="course-grid">
+      <div class="course-card">
+        <i class="fa-solid fa-pencil"></i>
+        <h2>Hiragana Basics</h2>
+        <p>Learn the 46 Hiragana characters with practice.</p>
+        <a href="lesson.html?lesson=1">Start</a>
+      </div>
+
+      <div class="course-card">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h2>Katakana Basics</h2>
+        <p>Master the Katakana alphabet used for foreign words.</p>
+        <a href="lesson.html?lesson=2">Start</a>
+      </div>
+
+      <div class="course-card">
+        <i class="fa-solid fa-handshake"></i>
+        <h2>Greetings & Intro</h2>
+        <p>Practice common greetings and self-introductions.</p>
+        <a href="lesson.html?lesson=3">Start</a>
+      </div>
+
+      <div class="course-card">
+        <i class="fa-solid fa-clock"></i>
+        <h2>Numbers & Time</h2>
+        <p>Count numbers and tell the time in Japanese.</p>
+        <a href="lesson.html?lesson=4">Start</a>
+      </div>
+
+      <div class="course-card">
+        <i class="fa-solid fa-language"></i>
+        <h2>Grammar Basics</h2>
+        <p>Understand sentence structures and particles.</p>
+        <a href="lesson.html?lesson=5">Start</a>
+      </div>
+
+      <div class="course-card">
+        <i class="fa-solid fa-comments"></i>
+        <h2>Daily Conversation</h2>
+        <p>Learn useful phrases for daily communication.</p>
+        <a href="lesson.html?lesson=6">Start</a>
+      </div>
+    </section>
+  </body>
+</html>

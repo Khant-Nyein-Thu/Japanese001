@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard - Sakura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .hero {
+        min-height: 100vh;
+        background-image: url("images/sakurabg.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 30px 5%;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #df4881;
+      }
+
+      .logo {
+        width: 140px;
+      }
+
+      .content {
+        margin-top: 80px;
+        color: #222;
+      }
+
+      .content h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      .content p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        background: linear-gradient(45deg, #df4881, #c430d7);
+        color: #fff;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.4s;
+      }
+
+      .btn:hover {
+        background: linear-gradient(45deg, #c430d7, #df4881);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+      }
+
+      .dashboard-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+      }
+
+      .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .card i {
+        font-size: 40px;
+        color: #df4881;
+        margin-bottom: 10px;
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .card p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .card a {
+        background-color: #df4881;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+        transition: background-color 0.3s;
+      }
+
+      .card a:hover {
+        background-color: #c430d7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="images/khantlogo.png" class="logo" />
+        <ul>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <h1>Welcome to Sakura!</h1>
+        <p>Start learning Japanese through guided lessons and fun materials.</p>
+        <a href="courses.html" class="btn">Go to Courses</a>
+      </div>
+
+      <div class="dashboard-cards">
+        <div class="card">
+          <i class="fas fa-book-open"></i>
+          <h3>Explore All Lessons</h3>
+          <p>Find beginner to advanced lessons.</p>
+          <a href="courses.html">View Courses</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Continue Learning</h3>
+          <p>Jump back into your last lesson easily.</p>
+          <a href="lesson.html?lesson=1">Continue</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-star"></i>
+          <h3>Your Progress</h3>
+          <p>Track your progress and goals.</p>
+          <a href="#">Coming Soon</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-comments"></i>
+          <h3>Community Chat</h3>
+          <p>Practice with other learners.</p>
+          <a href="#">Join Chat</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
